@@ -1,0 +1,92 @@
+body {
+  font-size: 16px;
+  color: black;
+  background-color: white;
+}
+
+/** ENCABEZADO **/
+#nav-enca {
+	background-color: blue;
+	border-radius: 0;
+	border: 0;
+}
+
+.navbar-brand {
+	padding-top: 10px;
+}
+
+.navbar-brand h1 {
+	color: white;
+	font-size: 1.5em;
+	text-transform: uppercase;
+	font-weight: bold;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+#nav-lista {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+#nav-lista a {
+	color: yellow;
+	text-align: center;
+	border-style: solid;
+	border-width: 1px;
+	border-color: black;
+}
+#nav-lista a:hover {
+	background-color: #E7E7E7;
+}
+.navbar-header button.navbar-toogle, .navbar-header .icon-bar {
+	border: 1px solid #61122F;
+}
+
+.navbar-header button.navbar-toggle {
+	clear: both;
+	margin-top: -30px;
+}
+/** FIN DE ENCABEZADO **/
+
+/* PAGINA PRINCIPAL */
+#Contenido {
+	margin: 0 50px 0;
+	background-color: grey;
+}
+
+/* FIN PAGINA PRONCIPAL */
+
+/********** Dispositivos medianos **********/
+@media (min-width: 992px) {
+	#nav-colaps a {
+		display: none;
+	}
+}
+
+/********** Dispositivos pequeños **********/
+@media (min-width: 768px) and (max-width: 991px) {
+	#nav-colaps a {
+		display: none;
+	}
+}
+
+/********** Dispositivos muy pequeños **********/
+@media (max-width: 767px) {
+	/* ENCABEZADO */
+	.navbar-brand {
+		padding-top: 10px;
+		height: 80px;
+	}
+	.navbar-brand h1 {
+		padding-top: 10px;
+		font-size: 5vw;
+	}
+	#nav-colaps li {
+		background-color: yellow;
+	}
+
+	#nav-colaps a {
+		font-size: 1.5em;
+		color: red;
+	}
+	/* FIN ENCABEZADO */
+}
